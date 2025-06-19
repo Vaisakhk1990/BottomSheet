@@ -61,4 +61,8 @@ internal class BottomSheetConfiguration: Equatable {
     var iPadFloatingSheet: Bool = true
     var sheetWidth: BottomSheetWidth = .platformDefault
     var accountForKeyboardHeight: Bool = false
+    var dragIndicatorWidth: CGFloat = 32
+    var dragIndicatorHeight: CGFloat = 5
+    var dragIndicatorTopPadding: CGFloat = 7.5
+    var dragIndicatorBottomPadding: CGFloat = 7.5
 }

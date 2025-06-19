@@ -53,4 +53,30 @@ public extension BottomSheet {
         self.configuration.dragIndicatorAction = action
         return self
     }
+    
+    /// To configure the Dragindicator Size
+    ///
+    /// - Parameters:
+    ///   - width  : The width of the Dragindicator
+    ///   - height: The height of the Dragindicator
+    ///
+    /// - Returns  :  A BottomSheet with a drag indicator.
+    func dragIndicatorSize(_ width: CGFloat, _ height: CGFloat) -> BottomSheet {
+        self.configuration.dragIndicatorWidth = width
+        self.configuration.dragIndicatorHeight = height
+        return self
+    }
+    
+    /// To configure the Dragindicator padding
+    ///
+    /// - Parameters:
+    ///   - width  : The width of the Dragindicator
+    ///   - height: The height of the Dragindicator
+    ///
+    /// - Returns  :  A BottomSheet with a drag indicator.
+    func dragIndicatorPadding(_ top: CGFloat, _ bottom: CGFloat) -> BottomSheet {
+        self.configuration.dragIndicatorTopPadding = top
+        self.configuration.dragIndicatorBottomPadding = bottom
+        return self
+    }
 }

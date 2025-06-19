@@ -90,16 +90,16 @@ internal extension BottomSheetView {
                 // Design of the drag indicator
                     .fill(self.configuration.dragIndicatorColor)
                     .frame(
-                        width: 36,
-                        height: 5
+                        width:  self.configuration.dragIndicatorWidth,
+                        height:  self.configuration.dragIndicatorHeight
                     )
                     .padding(
                         .top,
-                        7.5
+                        self.configuration.dragIndicatorTopPadding
                     )
                     .padding(
                         .bottom,
-                        7.5
+                        self.configuration.dragIndicatorBottomPadding
                     )
                 // Make the drag indicator drag-able
                     .gesture(
