@@ -65,4 +65,5 @@ internal class BottomSheetConfiguration: Equatable {
     var dragIndicatorHeight: CGFloat = 5
     var dragIndicatorTopPadding: CGFloat = 7.5
     var dragIndicatorBottomPadding: CGFloat = 7.5
+    var isLandScapeSupported: Bool = true
 }
