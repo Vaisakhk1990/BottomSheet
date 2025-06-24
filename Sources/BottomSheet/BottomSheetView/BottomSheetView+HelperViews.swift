@@ -182,7 +182,7 @@ internal extension BottomSheetView {
                 self.mainContent
                 // Make the main content drag-able if content drag is enabled
                 // highPriorityGesture is required to make dragging the bottom sheet work even when user starts dragging on buttons or other pressable items
-                    .highPriorityGesture(
+                    .simultaneousGesture(
                         self.configuration.isContentDragEnabled && self.configuration.isResizable ?
                         self.dragGesture(with: geometry) : nil
                     )
